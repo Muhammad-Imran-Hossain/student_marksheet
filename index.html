@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="input-box">
+            <h2>Add new student</h2>
+
+            <div class="input-form">
+                
+                <div class="input-item">
+                    <input type="text" class="name" placeholder="Name">
+                </div>
+
+                <div class="input-item">
+                    <input type="text" class="roll" placeholder="Roll">
+                </div>
+
+                <div class="input-item">
+                    <input type="text" class="class" placeholder="Class">
+                </div>
+
+                <div class="input-item">
+                    <input type="text" class="photo" placeholder="Photo Link">
+                </div>
+
+                <div class="gender">
+                    <span>Gender : </span>
+
+                    <input name="gender" type="radio" value="Male" id="male"> <label for="male">Male</label>
+
+                    <input  name="gender" type="radio" value="Female" id="female"> <label for="female">Female</label>
+                </div>
+                
+            </div>
+
+
+            <div class="marks">
+               
+                <h2>Marks</h2>
+
+            
+                <div id="science-box" class="subject">
+                    <input type="text" placeholder="Bangla">
+
+                    <input type="text" placeholder="English">
+
+                    <input type="text" placeholder="Physics">
+
+                    <input type="text" placeholder="Chemistry">
+
+                    <input type="text" placeholder="Biology">
+
+                    <input type="text" placeholder="Math">
+                </div>
+
+            </div>
+
+            <div class="add">
+                <button>Add New Student</button>
+            </div>
+        </div>
+
+
+        <div class="output-box">
+            <h2>Our Students</h2>
+            <div class="output-table">
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Roll </th>
+                        <th>Class</th>
+                        <th>Gender</th>
+                        <th>Grade</th>
+                        <th>CGPA</th>
+                        <th>Photo</th>
+                        <th>Action</th>
+                    </tr>
+                    <tbody id="list">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="result-data">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="./Result.js"></script>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
